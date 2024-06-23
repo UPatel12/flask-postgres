@@ -16,11 +16,10 @@ def get_all_messages():
     cur = conn.cursor()
 
     cur.execute('SELECT * FROM messages;')
-    messages = cur.fetchall()
+    messages = cur.fetchone()[0]
     cur.close()
     conn.close()
-    messages_list = [{"id": row[0], "content": row[1]} for row in messages]
-    return jsonify(messages_list)
+    return messages
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5002)
