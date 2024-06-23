@@ -1,4 +1,4 @@
-# Dockerized API and Database Services
+# Dockerized API w/ Postgres 
 
 This project demonstrates a simple deployment of two Docker containers that communicate with each other. The first container hosts an API service that returns a string, which it retrieves from a second service connected to a PostgreSQL database. The database is seeded with the string "hello world".
 
