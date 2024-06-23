@@ -22,7 +22,7 @@ This project demonstrates a simple deployment of two Docker containers that comm
 - **Dependencies**: Flask, psycopg2-binary
 - **Database**: PostgreSQL, seeded with "hello world"
 
-# Setup and Running
+## Setup and Running
 
 ### Run the following bash commands
 
