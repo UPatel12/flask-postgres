@@ -5,18 +5,18 @@ This project demonstrates a simple deployment of two Docker containers that comm
 ## Project Structure
 
 project-root/
-|-- docker-compose.yml
-|-- service1/
-| |-- Dockerfile
-| |-- requirements.txt
-| |-- app.py
-|-- service2/
-| |-- Dockerfile
-| |-- requirements.txt
-| |-- app.py
-|-- db/
-| |-- Dockerfile
-| |-- init.sql
+├── docker-compose.yml
+├──service1/
+| ├── Dockerfile
+| ├── requirements.txt
+| ├── app.py
+├── service2/
+| ├── Dockerfile
+| ├── requirements.txt
+| ├── app.py
+├── db/
+| ├── Dockerfile
+| ├── init.sql
 
 ## Requirements
 
