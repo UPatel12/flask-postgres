@@ -24,7 +24,7 @@ This project demonstrates a simple deployment of two Docker containers that comm
 
 # Setup and Running
 
-### Step 1: Clone the Repository
+### Run the following bash commands
 
 Clone the repository to your local machine:
 
