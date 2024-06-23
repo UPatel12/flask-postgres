@@ -15,13 +15,6 @@ def get_all_messages():
     conn = get_db_connection()
     cur = conn.cursor()
 
-    # cur.execute('SELECT content FROM messages;')
-    # messages = cur.fetchone()[0]
-    # cur.close()
-    # conn.close()
-    # print(messages)
-    # return messages
-
     cur.execute('SELECT * FROM messages;')
     messages = cur.fetchall()
     cur.close()
