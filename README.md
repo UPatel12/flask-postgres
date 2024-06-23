@@ -24,11 +24,13 @@ This project demonstrates a simple deployment of two Docker containers that comm
 
 ## Setup and Running
 
-### Run the following bash commands
+### Run the following setup commands
 
 ```bash
 git clone https://github.com/UPatel12/flask-postgres.git
 cd flask-postgres
 docker-compose up --build
-curl http://localhost:5001/messages
 ```
+### Call the service
+
+```curl http://localhost:5001```
