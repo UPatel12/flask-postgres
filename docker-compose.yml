@@ -1,0 +1,26 @@
+services:
+  service1:
+    build: ./service1
+    ports:
+      - "5001:5001"
+    depends_on:
+      - service2
+
+  service2:
+    build: ./service2
+    ports:
+      - "5002:5002"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db/postgres
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
