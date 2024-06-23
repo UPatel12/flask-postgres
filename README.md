@@ -26,8 +26,6 @@ This project demonstrates a simple deployment of two Docker containers that comm
 
 ### Run the following bash commands
 
-Clone the repository to your local machine:
-
 ```bash
 git clone https://github.com/UPatel12/flask-postgres.git
 cd flask-postgres
