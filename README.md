@@ -19,7 +19,7 @@ This project demonstrates a simple deployment of two Docker containers that comm
 
 - **Path**: `./service2`
 - **Description**: Connects to a PostgreSQL database and retrieves the string stored in the database.
-- **Dependencies**: Flask, SQLAlchemy, psycopg2-binary
+- **Dependencies**: Flask, psycopg2-binary
 - **Database**: PostgreSQL, seeded with "hello world"
 
 # Setup and Running
