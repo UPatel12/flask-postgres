@@ -8,7 +8,7 @@ def get_message():
     response = requests.get('http://service2:5002/')
     return response.text
 
-@app.route('/')
+@app.route('/messages')
 def get_message():
     response = requests.get('http://service2:5002/messages')
     return response.text
