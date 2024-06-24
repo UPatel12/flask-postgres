@@ -4,7 +4,7 @@ This project demonstrates a simple deployment of two Docker containers that comm
 
 ## Requirements
 
-- Docker
+- [Docker](https://docs.docker.com/get-docker/)
 - Docker Compose
 
 ## Services
