@@ -31,6 +31,16 @@ git clone https://github.com/UPatel12/flask-postgres.git
 cd flask-postgres
 docker-compose up --build
 ```
-### Call the service
+### Test 1
 
-```curl http://localhost:5001```
+```curl http://localhost:5001``` 
+
+OUTPUT: `hello world`
+
+### Test 2
+
+```curl http://localhost:5001/messages``` 
+
+OUTPUT: `[[1,"hello world"],[2,"hi world"],[3,"sup world"],[4,"bye world"]]`
+
+
