@@ -22,24 +22,34 @@ This project demonstrates a simple deployment of two Docker containers that comm
 - **Dependencies**: Flask, psycopg2-binary
 - **Database**: PostgreSQL, seeded with "hello world"
 
-## Setup and Running
+## Setup and Installation
 
-### Run the following setup commands
+### Initial setup
+- Clone the repo locally and cd into the directory 
+```bash
+git clone https://github.com/UPatel12/flask-postgres.git 
+cd flask-postgres
+```
+### Run Docker container
+- There should be 3 running containers. You can check this by running `docker ps --all`
 
 ```bash
-git clone https://github.com/UPatel12/flask-postgres.git
-cd flask-postgres
 docker-compose up --build
 ```
+
 ### Test 1
 
-```curl http://localhost:5001``` 
+```bash
+curl http://localhost:5001
+``` 
 
 OUTPUT: `hello world`
 
 ### Test 2
 
-```curl http://localhost:5001/messages``` 
+```bash 
+curl http://localhost:5001/messages
+``` 
 
 OUTPUT: `[[1,"hello world"],[2,"hi world"],[3,"sup world"],[4,"bye world"]]`
 
