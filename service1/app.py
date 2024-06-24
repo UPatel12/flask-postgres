@@ -9,7 +9,7 @@ def get_message():
     return response.text
 
 @app.route('/messages')
-def get_message():
+def get_all_messages():
     response = requests.get('http://service2:5002/messages')
     return response.text
 
