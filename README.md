@@ -24,20 +24,22 @@ This project demonstrates a simple deployment of two Docker containers that comm
 
 ## Setup and Installation
 
-### Initial setup
+### 1. Initial setup
 - Clone the repo locally and cd into the directory 
 ```bash
 git clone https://github.com/UPatel12/flask-postgres.git 
 cd flask-postgres
 ```
-### Run Docker container
+### 2. Run Docker container
 - There should be 3 running containers. You can check this by running `docker ps --all`
 
 ```bash
 docker-compose up --build
 ```
 
-### Test 1
+### 3. Test
+
+#### Fetch the first database entry 
 
 ```bash
 curl http://localhost:5001
@@ -45,7 +47,7 @@ curl http://localhost:5001
 
 OUTPUT: `hello world`
 
-### Test 2
+#### Fetch all the entries 
 
 ```bash 
 curl http://localhost:5001/messages
